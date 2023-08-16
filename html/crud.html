@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/crud.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-leftnav">
+        <a href="/html/index.html">Cartelera</a>
+      </div>
+    </header>
+
+    <div class="container-left">
+      <div class="container-add">
+        <div class="tittle">
+          <h2>Agregar Pelicula</h2>
+        </div>
+       <div class="Nombre">
+        <label for="Titulo">Nombre</label>
+        <input type="text" name="title" id="title" placeholder="Titulo" />
+      </div>
+      <div class="Año-Director">
+        <label for="Año">Año</label>
+        <input type="number" name="year" id="year" placeholder="Año" class="año"/>
+        <label for="Director">Director</label>
+        <input type="text" name="director" id="director" placeholder="Director"/>
+      </div>
+      <div class="Actores">
+        <label for="Actores">Actores</label>
+        <input type="text" name="actors" id="actors" placeholder="Actores" />
+      </div>
+      <div class="Reseña">
+        <label for="Reseña">Reseña</label>
+        <textarea name="review" id="review" cols="30" rows="10" placeholder="Reseña"></textarea>
+      </div>
+      <div class="Imagen">
+        <label for="Imagen">Imagen</label>
+        <input type="text" name="img" id="img" placeholder="Imagen" />
+      </div>
+      <div class="Trailer">
+        <label for="Trailer">Trailer</label>
+        <input type="text" name="trailer" id="trailer" placeholder="Trailer" />
+      </div>
+      <div class="Boton">
+        <button id="btnadd">Agregar Trailer</button>
+      </div>
+      </div>
+    </div>
+
+    <div class="container-mid">
+
+      <div class="container-busqueda">
+        <div class="">
+        <button id="btnquitar" >X</button>
+        <input type="text" name="busqueda" id="busqueda" placeholder="Pelicula">
+        <button id="btnbuscar" ><img src="/img/search.png" alt=""></button>
+      </div>
+        
+        
+
+       <table id="tabla">
+       <tbody id="tbody">
+
+          </tbody>
+
+       </table>
+        </div>
+
+      
+       
+
+        <div class="container-validar">
+          <div class="tittle"><h2>Editar</h2></div>
+          <div class="div">
+          <input type="text" name="id2" id="id2" placeholder="ID" />
+         <button id="datosid"><img src="/img/pencil.png" alt="" srcset=""></button>
+        </div>
+        </div>
+       
+
+        <div class="container-delete">
+          <div class="tittle"><h2>Eliminar</h2></div>
+          <div class="div">
+          <input type="text" name="id" id="id" placeholder="ID" />
+           <button id="btndelete"><img src="/img/trash.png" alt=""></button>
+
+        </div>
+
+    </div>
+    </div>
+
+        <div class="container-right">
+         <div class="container-update">
+          <div class="tittle">
+            <h2>Editar Pelicula</h2>
+          </div>
+          <div class="Nombre">
+            <label for="Titulo">Nombre</label>
+            <input type="text" name="title2" id="title2" placeholder="Titulo" />
+          </div>
+          <div class="Año-Director">
+            <label for="Año">Año</label>
+            <input type="number" name="year2" id="year2" placeholder="Año" />
+            <label for="Director">Director</label>
+            <input type="text" name="director2" id="director2" placeholder="Director" />
+          </div>
+          <div class="Actores">
+            <label for="Actores">Actores</label>
+            <input type="text" name="actors2" id="actors2" placeholder="Actores" />
+          </div>
+          <div class="Reseña">
+            <label for="Reseña">Reseña</label>
+            <textarea name="review2" id="review2" cols="30" rows="10" placeholder="Reseña"></textarea>
+            </div>
+          <div class="Imagen">
+            <label for="Imagen">Imagen</label>
+            <input type="text" name="img2" id="img2" placeholder="Imagen" />
+            </div>
+          <div class="Trailer">
+            <label for="Trailer">Trailer</label>
+            <input type="text" name="trailer2" id="trailer2" placeholder="Trailer" />
+            </div>
+          <div class="Boton">
+            <button id="btnupdate">Actualizar Trailer</button>
+          </div> 
+        </div> 
+          
+        </div>
+        
+
+    </div>
+
+    <!-- <div class="container">
+  <div class="container-add">
+    <input type="text" name="title" id="title" placeholder="Titulo"/>
+    <input type="number" name="year" id="year" placeholder="Año"/>
+    <input type="text" name="director" id="director" placeholder="Director"/>
+    <input type="text" name="actors" id="actors" placeholder="Actores"/>
+    <textarea name="review" id="review" cols="30" rows="10" placeholder="Reseña"></textarea>
+    <input type="text" name="img" id="img" placeholder="Imagen"/>
+    <input type="text" name="trailer" id="trailer" placeholder="Trailer"/>
+    <button id="btnadd">Agregar</button>
+  </div>
+
+
+    <div class="container-busqueda">
+      <button id="btnquitar" >X</button>
+      <input type="text" name="busqueda" id="busqueda" placeholder="Pelicula">
+      <button id="btnbuscar" >Buscar</button>
+      <p id="errorBusqueda"></p>
+      <br>
+      <div class="container-delete">
+      
+        <input type="text" name="id" id="id" placeholder="ID" />
+         <button id="btndelete">Delete</button>
+         <br>
+         <br>
+         <br>
+   
+         <input type="text" name="id2" id="id2" placeholder="ID" />
+         <button id="datosid">Validar</button>
+        
+       
+       </div>
+          <table id="tabla">
+           
+             <tbody id="tbody">
+
+             </tbody>
+
+          </table>
+    </div>
+    <div class="container-update">
+        
+      <input type="text" name="title2" id="title2" placeholder="Titulo" />
+      <input type="number" name="year2" id="year2" placeholder="Año" />
+      <input type="text" name="director2" id="director2" placeholder="Director" />
+      <input type="text" name="actors2" id="actors2" placeholder="Actores" />
+      <textarea name="review2" id="review2" cols="30" rows="10" placeholder="Reseña"></textarea>
+      <input type="text" name="img2" id="img2" placeholder="Imagen" />
+      <input type="text" name="trailer2" id="trailer2" placeholder="Trailer" />
+      <button id="btnupdate">Actualizar</button>
+    </div>
+
+  </div> -->
+    <script type="module" src="/js/crud.js"></script>
+  </body>
+</html>
